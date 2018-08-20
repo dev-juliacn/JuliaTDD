@@ -1,2 +1,2 @@
-FROM juliacn/ubuntu:julia.basic
+FROM julia:latest
 WORKDIR /home/
