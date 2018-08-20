@@ -1,0 +1,7 @@
+name = "JuliaTDD"
+uuid = "78388d5e-a493-11e8-2f85-476f9acca48b"
+authors = ["Unknown "]
+version = "0.1.0"
+
+[deps]
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
