@@ -9,9 +9,12 @@ bash:
 
 JuliaTDD:
 	docker-compose run --rm work julia -e 'using Pkg; Pkg.generate("JuliaTDD")'
-	docker-compose run --rm work julia -e 'using Pkg; Pkg.activate("JuliaTDD");Pkg.add("InteractiveUtils")'
+	docker-compose run --rm work julia -e 'using Pkg; Pkg.activate("JuliaTDD");Pkg.add("Pkg");'
 	cp -r JuliaTDD/src .
 	cp -r JuliaTDD/*.toml .
+
+build:
+	docker-compose build
 
 clean:
 	rm -rf JuliaTDD

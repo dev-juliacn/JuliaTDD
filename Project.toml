@@ -1,7 +1,7 @@
 name = "JuliaTDD"
-uuid = "7782f210-a4ab-11e8-03f9-554cedef9895"
+uuid = "baf6c868-a4c2-11e8-1234-d34badf7ad97"
 authors = ["Unknown "]
 version = "0.1.0"
 
 [deps]
-InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
