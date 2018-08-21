@@ -6,7 +6,7 @@ The purpose of this package is to offer a reproducible workflow driven by `Pkg.t
 
 The basic idea is very simple.
 
-1. Create an empty package with one-line shell command running [generate.jl](generate.jl]).
+1. Create an empty package with one-line shell command running [generate.jl](generate.jl).
 
 ```
 julia generate.jl
@@ -18,14 +18,14 @@ julia add.jl
 ```
 
 3. Copy the files and folders from `JuliaTDD` folder to the root (because we want to use this repo as 
-an external Julia package that can be added via `Pkg.add()`)
+an external Julia package that can be added via `Pkg.add()`).
 
 ```
 cp -r JuliaTDD/src .
 cp -r JuliaTDD/*.toml .
 ```
 
-4. Start REPL with one-line shell command running [main.jl](main.jl)
+4. Start REPL with one-line shell command running [main.jl](main.jl).
 
 ```
 julia -i main.jl
