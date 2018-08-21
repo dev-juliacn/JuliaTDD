@@ -1,4 +1,2 @@
-FROM julia:latest
-RUN apt-get update -y
-RUN apt-get install -y bzip2
+FROM juliacn/ubuntu:julia.pycall
 WORKDIR /home/
