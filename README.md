@@ -51,7 +51,8 @@ make clean repl-test
 (v1.0) pkg> test JuliaTDD
 ```
 
-3. You can also use following one-liner with [docker](https://hub.docker.com/r/library/julia/tags/).
+3. You can also use following one-liner with docker images[juliacn/ubuntu:julia](https://hub.docker.com/r/juliacn/ubuntu/tags/) 
+(the official image [julia](https://hub.docker.com/r/library/julia/tags/) doesn't have `bzip2` which is required to install PyCall).
 ```
-docker run --rm julia julia -i -e 'using Pkg;Pkg.add(Pkg.PackageSpec(url="https://github.com/dev-juliacn/JuliaTDD", rev="pycall"));Pkg.test("JuliaTDD");'
+docker run --rm juliacn/ubuntu:julia julia -i -e 'using Pkg;Pkg.add(Pkg.PackageSpec(url="https://github.com/dev-juliacn/JuliaTDD", rev="pycall"));Pkg.test("JuliaTDD");'
 ```
