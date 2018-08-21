@@ -1,15 +1,15 @@
 batch-test: JuliaTDD
-	docker-compose run --rm work julia -e 'using Pkg;Pkg.activate(".");Pkg.update();Pkg.test()'
+	docker-compose run --rm work julia main.jl
 
-repl-test:	JuliaTDD
-	docker-compose run --rm work julia -i -e 'using Pkg;Pkg.activate(".");Pkg.update();Pkg.test()'
+repl-test:  JuliaTDD
+	docker-compose run --rm work julia -i main.jl
 
 bash:
 	docker-compose run --rm work bash
 
 JuliaTDD:
-	docker-compose run --rm work julia -e 'using Pkg; Pkg.generate("JuliaTDD")'
-	docker-compose run --rm work julia -e 'using Pkg; Pkg.activate("JuliaTDD");Pkg.add("Pkg");'
+	docker-compose run --rm work julia generate.jl
+	docker-compose run --rm work julia add.jl
 	cp -r JuliaTDD/src .
 	cp -r JuliaTDD/*.toml .
 

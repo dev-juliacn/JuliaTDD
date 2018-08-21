@@ -1,7 +1,9 @@
 name = "JuliaTDD"
-uuid = "baf6c868-a4c2-11e8-1234-d34badf7ad97"
+uuid = "527c4dd8-a4e0-11e8-3035-f9007ed5286e"
 authors = ["Unknown "]
 version = "0.1.0"
 
 [deps]
+Conda = "8f4d0f93-b110-5947-807f-2305c1781a2d"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
