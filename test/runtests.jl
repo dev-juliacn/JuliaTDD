@@ -12,4 +12,5 @@ println("The test works.")
 println("Let's do something useful.")
 
 include("pycall.jl")
+include("Conda.jl")
 include("pip.jl")
